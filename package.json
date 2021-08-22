@@ -1,0 +1,34 @@
+{
+  "name": "Rng",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-ts": "tsc",
+    "build-server": "npm run build-ts",
+    "build-client": "cd client && npm install && npm run build",
+    "build": "npm run build-server && npm run build-client",
+    "serve": "node server/dist/index.js",
+    "start": "npm run serve",
+    "watch-ts": "tsc -w",
+    "watch": "npm run watch-ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PierreLemmel/Rng.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PierreLemmel/Rng/issues"
+  },
+  "homepage": "https://github.com/PierreLemmel/Rng#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.7.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
